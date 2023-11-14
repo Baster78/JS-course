@@ -42,3 +42,25 @@
 // personalMovieDB.movies[c] = d;
 
 // console.log(personalMovieDB);
+
+// const hamburger = 2;
+
+// const fries = 1;
+
+// const cola = 0;
+
+// if (hamburger === 3 && cola === 1 && fries) {
+//    console.log('Я сытый!');
+// } else {
+//    console.log('Мы уходим!');
+// }
+
+const hamburger = 3;
+const fries = 0;
+const cola = 0;
+
+if (hamburger || cola || fries) {
+   console.log('Все довольны!');
+} else {
+   console.log('Мы уходим!');
+}
