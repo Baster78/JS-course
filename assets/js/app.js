@@ -1,66 +1,38 @@
-/* Задание на урок:
-
-1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
-'Сколько фильмов вы уже посмотрели?'
-
-2) Создать объект personalMovieDB и в него поместить такие свойства:
-    - count - сюда передается ответ на первый вопрос
-    - movies - в это свойство поместить пустой объект
-    - actors - тоже поместить пустой объект
-    - genres - сюда поместить пустой массив
-    - privat - в это свойство поместить boolean(логическое) значение false
-
-3) Задайте пользователю по два раза вопросы:
-    - 'Один из последних просмотренных фильмов?'
-    - 'На сколько оцените его?'
-Ответы стоит поместить в отдельные переменные
-Записать ответы в объект movies в формате: 
-    movies: {
-        'logan': '8.1'
-    }
-
-Проверить, чтобы все работало без ошибок в консоли */
-
 'use strict';
 
-// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// let result = '';
+// const length = 7;
 
-// const personalMovieDB = {
-//    count: numberOfFilms,
-//    movies: {},
-//    actors: {},
-//    genres: [],
-//    privat: false,
-// };
-
-// const a = prompt('Один из последних просмотренных фильмов?', ''),
-//    b = prompt('На сколько оцените его?', ''),
-//    c = prompt('Один из последних просмотренных фильмов?', ''),
-//    d = prompt('На сколько оцените его?', '');
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[c] = d;
-
-// console.log(personalMovieDB);
-
-// const hamburger = 2;
-
-// const fries = 1;
-
-// const cola = 0;
-
-// if (hamburger === 3 && cola === 1 && fries) {
-//    console.log('Я сытый!');
-// } else {
-//    console.log('Мы уходим!');
+// for (let i = 1; i < length; i++) {
+//    for (let j = 0; j < i; j++) {
+//       result += '*';
+//    }
+//    result += '\n';
 // }
 
-const hamburger = 3;
-const fries = 0;
-const cola = 0;
+// console.log(result);
 
-if (hamburger || cola || fries) {
-   console.log('Все довольны!');
-} else {
-   console.log('Мы уходим!');
+first: for (let i = 0; i < 3; i++) {
+   console.log(`First level: ${i}`);
+   for (let j = 0; j < 3; j++) {
+      console.log(`Second level: ${j}`);
+      for (let k = 0; k < 3; k++) {
+         if (k === 2) continue first;
+         console.log(`Third level: ${k}`);
+      }
+   }
 }
+
+function fifthTask() {
+   const arrayOfNumbers = [];
+
+   // Пишем решение вот тут
+
+   for (let i = 5; i <= 10; i++) {
+      arrayOfNumbers[i];
+   }
+   // Не трогаем
+   return arrayOfNumbers;
+}
+
+fifthTask();
