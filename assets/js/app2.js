@@ -1,7 +1,15 @@
 'use strict';
 
-function showFirstMessage() {
-   console.log('Hello World!');
+const usdCourse = 28;
+const discount = 0.9;
+
+function convert(amount, curr) {
+   return curr * amount;
 }
 
-showFirstMessage();
+function promotion(result) {
+   console.log(result * discount);
+}
+
+const res = convert(500, usdCourse);
+promotion(res);
